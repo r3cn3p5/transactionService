@@ -1,0 +1,23 @@
+### Send POST request with json body
+POST http://localhost:8080/transaction/save
+Content-Type: application/json
+
+{
+  "id": 999,
+  "payload": "content"
+}
+
+### Send POST request with json body
+POST http://localhost:8080/transaction/save
+Content-Type: application/json
+
+{
+  "id": 998,
+  "payload": "This is the time to see"
+}
+
+
+### GET request with parameter
+GET http://localhost:8080/transaction/999
+Content-Type: application/json
+

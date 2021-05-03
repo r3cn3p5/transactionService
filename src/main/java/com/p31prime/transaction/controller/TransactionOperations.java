@@ -8,9 +8,9 @@ import java.util.Optional;
 public interface TransactionOperations {
 
     @GetMapping("/{id}")
-    Optional<Transaction> getById(@PathVariable int id);
+    Optional<Transaction> getById(@PathVariable Integer id);
 
-    @PostMapping("/save/{id}")
-    public void save(@RequestBody Transaction transaction, @PathVariable int id);
+    @PostMapping("/save")
+    void save(@RequestBody Transaction transaction);
 
 }

@@ -5,10 +5,6 @@ plugins {
 	id 'com.bmuschko.docker-spring-boot-application' version '6.7.0'
 }
 
-group = 'com.p31prime'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
-
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -23,6 +19,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-cache'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.data:spring-data-redis'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
 
 	compileOnly 'org.projectlombok:lombok'
 

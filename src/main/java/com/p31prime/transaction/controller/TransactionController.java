@@ -18,12 +18,12 @@ public class TransactionController implements TransactionOperations {
     }
 
     @Override
-    public Optional<Transaction> getById(int id) {
+    public Optional<Transaction> getById(Integer id) {
         return service.getTransaction(id);
     }
 
     @Override
-    public void save(Transaction transaction, int id) {
+    public void save(Transaction transaction) {
         service.saveTransaction(transaction);
     }
 }
