@@ -21,3 +21,7 @@ Content-Type: application/json
 GET http://localhost:8080/transaction/999
 Content-Type: application/json
 
+
+### GET request with parameter
+GET http://localhost:8080/transaction/997
+Content-Type: application/json
